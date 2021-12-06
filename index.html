@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
   <body> 
     <div class="preloader">
@@ -46,7 +47,7 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  
+               
                 </div>
               </div>
             </div>
@@ -55,24 +56,23 @@
                 <div class="rd-navbar-nav-wrap toggle-original-elements">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>                
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#who">About me</a></li>                
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#project">My projects</a></li>                   
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#gallery">Gallery</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#merch">Merch</a></li>
-					<li class="rd-nav-item"><a class="rd-nav-link" href="#contact">Contact</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link lang" key="Home" href="#home">Home</a></li>                
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="About" href="#who">About me</a></li>                
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="Projects" href="#project">My projects</a></li>                   
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="Gallery" href="#gallery">Gallery</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link lang" key="Merch" href="#merch">Merch</a></li>
+					<li class="rd-nav-item"><a class="rd-nav-link lang" key="Contact" href="#contact">Contact</a></li>
 					
                     <li style="float: right; margin-left: 50px;">
                       <ul class="list-inline">
-                        <li class="list-inline-item"><a class="icon mdi mdi-vk" href="#"></a></li>
-                        <li class="list-inline-item"><a class="icon mdi mdi-twitter" href="#"></a></li>
-                        <li class="list-inline-item"><a class="icon mdi mdi-instagram" href="#"></a></li>
-                        <li class="list-inline-item"><a class="icon mdi mdi-facebook" href="#"></a></li>
+                        <li class="list-inline-item"><a class="icon mdi mdi-vk" href="https://vk.com/zen_city"></a></li>
+                        <li class="list-inline-item"><a class="icon mdi mdi-twitter" href="https://twitter.com/zencityband"></a></li>
+                        <li class="list-inline-item"><a class="icon mdi mdi-instagram" href="https://www.instagram.com/zencityband/"></a></li>
+                        <li class="list-inline-item"><a class="icon mdi mdi-facebook" href="https://www.facebook.com/ZenCityBand/"></a></li>
 						
-					<li>
-                  <select class="select select-inline rd-navbar-fixed-element-2" onchange="if (this.value) window.location.href = this.value" data-dropdown-class="select-inline-dropdown">
-                    <option value="/" selected="">EN</option>
-                    <option value="./ru/">RU</option>
+					<li id="tabs">
+                  <button id="en"  class="translate btn active">EN</button>
+                  <button id="ru"  class="translate btn">RU</button>
                   </select>
 				  </li>
                       </ul>
@@ -88,8 +88,9 @@
         <div class="parallax-content context-dark text-center">
           <div class="section-md">
             <div class="container">
-              <div class="box-info-renee-subtitle wow fadeInLeft">Official site</div>
-              <h1 class="box-info-renee-title wow fadeScale">SLAVIN </h1>
+              <div class="box-info-renee-subtitle wow fadeInLeft lang" key="official">Official site</div>
+              <h1 class="box-info-renee-title wow fadeScale lang" key="slavin">SLAVIN </h1>
+
             </div>
           </div>
         </div>
@@ -99,10 +100,10 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 col-lg-6 box-about">
-              <h2 class="title-style-9 wow fadeInRight title_text">A few words <span>about me</span>
-              </h2>
-              <p class="wow fadeInRight title_text" data-wow-delay=".1s">Вокалист, гитарист, продюсер, автор песен в проектах: Zen City, междуснами, Slavin, Членский Взнос. Сессионный гитарист/вокалист, преподаватель.</p>
-              <p class="wow fadeInRight title_text " data-wow-delay=".2s">Мультижанровость, или музыкальная "биполярка"?<br> Мне невероятно трудно оставаться в рамках одного стиля даже в одном альбоме собственной группы. Поэтому проектов у меня несколько и вы можете, послушав песни, определить их стили и жанры.</p>
+              <h2 class="title-style-9 wow fadeInRight title_text lang" key="few">A few words about me</h2> 
+              <p class="wow fadeInRight title_text lang" key="who-1" data-wow-delay=".1s">Вокалист, гитарист, продюсер, автор песен в проектах: Zen City, междуснами, Slavin, Членский Взнос. Сессионный гитарист/вокалист, преподаватель.</p>
+              <p class="wow fadeInRight title_text lang" key="who-2" data-wow-delay=".2s">Мультижанровость, или музыкальная "биполярка"?</p>
+			  <p class="wow fadeInRight title_text lang" key="who-3" data-wow-delay=".2s">Мне невероятно трудно оставаться в рамках одного стиля даже в одном альбоме собственной группы. Поэтому проектов у меня несколько и вы можете, послушав песни, определить их стили и жанры.</p>
             </div>
           </div>
         </div>
@@ -112,7 +113,7 @@
       <!-- Our Wines-->
       <section  id="project" class="section section-xxl bg-gray-1">
         <div class="container">
-          <h2 class="wow fadeScale">My projects</h2>
+          <h2 class="wow fadeScale lang" key="Projects">My projects</h2>
           <div class="row row-30">
             <div class="col-sm-6 col-lg-4">
               <!-- Thumbnail Classic-->
@@ -123,8 +124,8 @@
                 <div class="thumbnail-classic-caption">
                   <div>
 					<h5 class="thumbnail-classic-title">
-					<p id="zen_open" onclick="zen_open()"><a  class="button" href="#zen_city">Read more</a></p>
-					<p id="zen_close2" style="display:none" onclick="zen_close()"><a class="button" href="#project">Hide</a></p></h5>
+					<p id="zen_open" onclick="zen_open()"><a  class="button lang" key="read" href="#zen_city">Read more</a></p>
+					<p id="zen_close2" style="display:none" onclick="zen_close()"><a class="button lang" key="hide"  href="#project">Hide</a></p></h5>
                   </div>
                 </div>
               </article>
@@ -138,8 +139,8 @@
                 <div class="thumbnail-classic-caption">
                   <div>
                     <h5 class="thumbnail-classic-title">
-					<p id="mejdy_open" onclick="mejdy_open()"><a class="button" href="#mejdy">Read more</a></p>
-					<p id="mejdy_close2" style="display:none" onclick="mejdy_close()"><a class="button" href="#project">Hide</a></p></h5>
+					<p id="mejdy_open" onclick="mejdy_open()"><a class="button lang" key="read" href="#mejdy">Read more</a></p>
+					<p id="mejdy_close2" style="display:none" onclick="mejdy_close()"><a class="button lang" key="hide" href="#project">Hide</a></p></h5>
 				
                   </div>
                 </div>
@@ -154,33 +155,30 @@
                 <div class="thumbnail-classic-caption">
                   <div>
                     <h5 class="thumbnail-classic-title">
-					<p id="slavin_open" onclick="slavin_open()"><a class="button" href="#slavin">Read more</a></p>
-					<p id="slavin_close2"; style="display:none" onclick="slavin_close()"><a class="button" href="#project">Hide</a></p></h5>
+					<p id="slavin_open" onclick="slavin_open()"><a class="button lang" key="read" href="#slavin">Read more</a></p>
+					<p id="slavin_close2"; style="display:none" onclick="slavin_close()"><a class="button lang" key="hide"  href="#project">Hide</a></p></h5>
 				
                   </div>
                 </div>
               </article>
             </div>
-		</div>
-        </div>
 				<div id="mejdy" style="display:none">
 					<section class="section section-sm section-last bg-default text-left">
 						<div class="container grid-system-bordered grid-demonstration">
 							
 							<div class="row text-center">
 							<div class="col-6">
-							<h3 >МЕЖДУСНАМИ</h3>
-							<p class="text_p">
-								The unconscious and the conscious are mixed between sleep and reality every time we fall asleep.<br>
-								In "betweendreams", personal experiences and memories are so mixed up - in nervous texts, fears, anxieties and joys - in hypnotic, deceptively light guitars. And at the same time, there is an obvious reversal from loud rock towards lyrical pop music with a electronic sound.
+							<h3>МЕЖДУСНАМИ</h3>
+							<p class="text_p lang" key="project-1.1">The unconscious and the conscious are mixed between sleep and reality every time we fall asleep.</p>
+							<p class="text_p lang" key="project-1.2">In "betweendreams", personal experiences and memories are so mixed up - in nervous texts, fears, anxieties and joys - in hypnotic, deceptively light guitars. And at the same time, there is an obvious reversal from loud rock towards lyrical pop music with a electronic sound.</p>
 							</p>
 							<p>
 							<ul class="social-icons-6 text_p">
-							Follow:	<li><a href="#"><i class="fa fa-2x fa-vk"></i></a></li>
+							<span class="lang" key="follow">Follow:</span>	<li><a href="#"><i class="fa fa-2x fa-vk"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li><br>
 
-							Listen:	<li><a href="#"><i class="fa fa-2x fa-apple"></i></a></li>
+							<span class="lang" key="listen">Listen:</span>	<li><a href="#"><i class="fa fa-2x fa-apple"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-spotify"></i></a></li>
 							<li><a href="#"><i class="mdi mdi-2x mdi-google-play"></i></a></li>
 							</ul>                
@@ -190,7 +188,7 @@
 							<iframe  src="https://www.youtube.com/embed/c91Votx-uws?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="col-12">
-							<p id="mejdy_close"  class="button" onclick="mejdy_close()">Close</p>
+							<p id="mejdy_close"  class="button lang" key="close" onclick="mejdy_close()">Close</p>
 							</div>
 							</div>
 						</div>
@@ -203,19 +201,17 @@
 							
 							<div class="row text-center">
 							<div class="col-6">
-							<h3 >ZEN CITY</h3>
-							<p class="text_p">
-								Zen City - The Heavy guitar Riff got lyrical Vocals as partners. A classic action movie with shootouts of philosophical texts in Russian and English, full of special humor and the indispensable self-irony of the author.<br>
-								The heroes are helped by a violin quartet, a children's choir, or a crowd of DJ's with acid synths.<br>
-								On stage, all this is realized in the format of a rock trio, sometimes a quartet and sounds uncompromisingly powerful!
-								</p>
+							<h3>ZEN CITY</h3>
+							<p class="text_p lang" key="project-2.1">Zen City - The Heavy guitar Riff got lyrical Vocals as partners. A classic action movie with shootouts of philosophical texts in Russian and English, full of special humor and the indispensable self-irony of the author.</p>
+							<p class="text_p lang" key="project-2.2">Sometimes, the heroes are helped by a violin quartet, a children's choir, or a crowd of DJ's with acid synths.</p>
+							<p class="text_p lang" key="project-2.3">On stage, all this is realized in the format of a rock trio, sometimes a quartet and sounds uncompromisingly powerful!</p>
 							<p>
 							<ul class="social-icons-6 text_p">
-							Follow:	<li><a href="#"><i class="fa fa-2x fa-vk"></i></a></li>
+							<span class="lang" key="follow">Follow:</span> <li><a href="#"><i class="fa fa-2x fa-vk"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li><br>
 
-							Listen:	<li><a href="#"><i class="fa fa-2x fa-apple"></i></a></li>
+							<span class="lang" key="listen">Listen:</span>	 <li><a href="#"><i class="fa fa-2x fa-apple"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-spotify"></i></a></li>
 							<li><a href="#"><i class="mdi mdi-2x mdi-google-play"></i></a></li>
 							</ul>                
@@ -225,7 +221,7 @@
 							<iframe  src="https://www.youtube.com/embed/C-v0EQ0fhNU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="col-12">
-							<p id="zen_close"  class="button" onclick="zen_close()">Close</p>
+							<p id="zen_close"  class="button lang" key="close" onclick="zen_close()">Close</p>
 							</div>
 							</div>
 						</div>
@@ -239,19 +235,17 @@
 							<div class="row text-center">
 							<div class="col-6">
 							<h3>SLAVIN</h3>
-							<p class="text_p">
-								Slavin - instrumental compositions woven from threads of various genres - be it country, rock or funk.<br>
-								Despite the fact that this is a project, primarily by a guitarist, the phrase "guitar music" is intentionally absent here.<br>
-								The guitar here is not a goal, but a means, and Slavin is a set of colors with which the listener draws cartoons or pictures in his mind, serious or not.
-							</p>
+							<p class="text_p lang" key="project-3.1">Slavin - instrumental compositions woven from threads of various genres - be it country, rock or funk.</p>
+							<p class="text_p lang" key="project-3.2">Despite the fact that this is a project, primarily by a guitarist, the phrase "guitar music" is intentionally absent here.</p>
+							<p class="text_p lang" key="project-3.3">The guitar here is not a goal, but a means, and Slavin is a set of colors with which the listener draws cartoons or pictures in his mind, serious or not.</p>
 							
 							<p>
 							<ul class="social-icons-6 text_p">
-							Follow:	<li><a href="#"><i class="fa fa-2x fa-vk"></i></a></li>
+							<span class="lang" key="follow">Follow:</span><li><a href="#"><i class="fa fa-2x fa-vk"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-twitter"></i></a></li><br>
 
-							Listen:	<li><a href="#"><i class="fa fa-2x fa-apple"></i></a></li>
+							<span class="lang" key="listen">Listen:</span>	<li><a href="#"><i class="fa fa-2x fa-apple"></i></a></li>
 							<li><a href="#"><i class="fa fa-2x fa-spotify"></i></a></li>
 							<li><a href="#"><i class="mdi mdi-2x mdi-google-play"></i></a></li>
 							</ul>                
@@ -261,17 +255,20 @@
 							<iframe  src="https://www.youtube.com/embed/C-v0EQ0fhNU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="col-12">
-							<p id="slavin_close"  class="button" onclick="slavin_close()">Close</p>
+							<p id="slavin_close"  class="button lang" key="close" onclick="slavin_close()">Close</p>
 							</div>
 							</div>
 						</div>
 					</section>
 				</div>
-      </section>
+   
+		</div>
+        </div> 
+		</section>
 
       <section id="gallery" class="section section-xxl bg-default">
         <div class="container">
-          <h2 class="wow fadeScale">Gallery</h2>
+          <h2 class="wow fadeScale lang" key="Gallery">Gallery</h2>
           <div class="isotope-wrap">
             <div class="row row-30 isotope isotope-custom-1" data-lightgallery="group">
 			
@@ -416,7 +413,7 @@
       <!-- Exclusive Merch-->
       <section id="merch" class="section section-xxl bg-gray-1">
         <div class="container">
-          <h2 class="wow fadeScale">Merch</h2>
+          <h2 class="wow fadeScale lang" key="Merch">Merch</h2>
           <div class="row row-lg row-30 row-lg-50">
             <div class="col-sm-6 col-md-4 col-lg-3">
               <!-- Product-->
@@ -482,7 +479,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-12"><a class="link-classic link-primary wow fadeInUp" href="#">Visit shop</a></div>
+            <div class="col-12"><a class="link-classic link-primary wow fadeInUp lang" key="shop" href="#">Visit shop</a></div>
           </div>
         </div>
       </section>
@@ -491,43 +488,44 @@
         <div  class="footer-classic-body section-lg section-inset-4 context-dark">
           <div class="container">
             <div class="row row-40 row-md-50 justify-content-sm-between">
+			
+              <div class="col-sm-6 col-lg-3 wow fadeInRight" data-wow-delay=".1s">
+                <h4 class="footer-creative-title lang" key="Contact">Contact</h4>
+                <ul class="contacts-holly">
+                  <li>
+                    <div class="contacts-holly-title lang" key="Phone">Phone</div>
+                    <div class="contacts-holly-text"><a href="tel:+79272019405">+7 (927) 201 94 05</a></div>
+                  </li>
+                  <li>
+                    <div class="contacts-holly-title lang" key="Email">E-mail</div>
+                    <div class="contacts-holly-text"><a href="mailto:zencityband@gmail.com">zencityband@gmail.com</a></div>
+                  </li>
+                </ul>
+              </div>
               <div class="col-lg-5 wow fadeInRight">
                 <div class="inset-xl-right-55">
-                  <h4 class="footer-creative-title">Social networks</h4>
+                  <h4 class="footer-creative-title lang" key="social">Social networks</h4>
                   <p>
 				  
               <div class="col-sm-auto">
                 <ul class="list-inline list-social list-inline-sm">
-                  <li><a class="icon mdi mdi-facebook" href="#"></a></li>
-                  <li><a class="icon mdi mdi-twitter" href="#"></a></li>
-                  <li><a class="icon mdi mdi-instagram" href="#"></a></li>
-                  <li><a class="icon mdi mdi-google-plus" href="#"></a></li>
+                  <li><a class="icon mdi mdi-facebook" href="https://www.facebook.com/ZenCityBand/"></a></li>
+                  <li><a class="icon mdi mdi-twitter" href="https://twitter.com/zencityband"></a></li>
+                  <li><a class="icon mdi mdi-instagram" href="https://www.instagram.com/zencityband/"></a></li>
+                  <li><a class="icon mdi mdi-vk" href="https://vk.com/zen_city"></a></li>
                 </ul>
               </div>
 				  </p>
                   </div>
               </div>
-              <div class="col-sm-6 col-lg-3 wow fadeInRight" data-wow-delay=".1s">
-                <h4 class="footer-creative-title">Contact</h4>
-                <ul class="contacts-holly">
-                  <li>
-                    <div class="contacts-holly-title">Phone</div>
-                    <div class="contacts-holly-text"><a href="tel:#">+7(987) 65 43 210</a></div>
-                  </li>
-                  <li>
-                    <div class="contacts-holly-title">E-mail</div>
-                    <div class="contacts-holly-text"><a href="mailto:#">mail@mail.ru</a></div>
-                  </li>
-                </ul>
-              </div>
               <div class="col-sm-5 col-lg-2 wow fadeInRight" data-wow-delay=".2s">
-                <h4 class="footer-creative-title">Menu</h4>
+                <h4 class="footer-creative-title lang" key="menu">Menu</h4>
                 <ul class="footer-creative-list">                  
-                    <li><a href="#home">Home</a></li>                
-                    <li><a href="#who">About me</a></li>                
-                    <li><a href="#project">My projects</a></li>                   
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#merch">Merch</a></li>
+                    <li><a href="#home" class="lang" key="Home">Home</a></li>                
+                    <li><a href="#who" class="lang" key="About">About me</a></li>                
+                    <li><a href="#project" class="lang" key="Projects">My projects</a></li>                   
+                    <li><a href="#gallery" class="lang" key="Gallery">Gallery</a></li>
+                    <li><a href="#merch" class="lang" key="Merch">Merch</a></li>
                 </ul>
               </div>
             </div>
@@ -537,7 +535,7 @@
           <div class="container">
             <div class="row row-10 align-items-center justify-content-sm-between">
               <div class="col-sm-auto">
-                <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Slavin</span><span>.&nbsp; All rights reserved.</span><span>&nbsp;</span></p>
+                <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Slavin</span><span class="lang" key="reserved">.&nbsp; All rights reserved.</span><span>&nbsp;</span></p>
               </div>
             </div>
           </div>
@@ -547,6 +545,6 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/accord.js"></script>
-	
+    <script src="js/accord.js"></script>	
+    <script src="js/lang.js"></script>
 </html>
